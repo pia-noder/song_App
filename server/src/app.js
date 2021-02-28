@@ -13,7 +13,11 @@ app.use(cors());
 
 //Création de endpoints
 app.post('/register', (req, res, next) => {
-    res.send({message: 'your user was registered !'})
+    res.send({message: 'your user was registered !'});
+});
+
+app.get('/posts', (req,res, next) => {
+    res.send({message: 'Affichage de touts les posts'});
 });
 
 module.exports = app;
